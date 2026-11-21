@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Cargo Velo: positioning, growth plan and query coverage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--black:#000;--white:#fff;--green:#00ff6e;--green-text:#008000;--paper:#f5f5f5;--muted:#555;--line:#e2e2e2}
+*{box-sizing:border-box;margin:0}
+body{font-family:Inter,system-ui,sans-serif;color:#000;background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Poppins,Inter,sans-serif;letter-spacing:-.03em;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid #000;outline-offset:3px;border-radius:4px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.banner{background:var(--green);font-size:13px;font-weight:600;text-align:center;padding:8px 16px}
+header.top{background:#000;color:#fff;padding:72px 0 64px}
+header.top h1{font-size:clamp(36px,6vw,68px);font-weight:800;letter-spacing:-.05em;max-width:12em}
+header.top p{margin-top:20px;color:#cfcfcf;font-size:19px;max-width:34em}
+header.top nav{margin-top:28px;display:flex;gap:10px;flex-wrap:wrap}
+header.top nav a{padding:9px 16px;border:1px solid #444;border-radius:999px;font-size:14px;text-decoration:none;color:#fff}
+header.top nav a:hover{background:var(--green);color:#000;border-color:var(--green)}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+section.alt{background:var(--paper)}
+h2{font-size:clamp(28px,3.6vw,42px);font-weight:800;letter-spacing:-.045em;margin-bottom:18px}
+h3{font-size:21px;font-weight:700;margin:30px 0 8px}
+p{margin:0 0 14px;max-width:44em}
+ul{margin:0 0 16px 20px;max-width:44em}
+li{margin-bottom:6px}
+.note{border-left:4px solid var(--green);background:#f0fff6;padding:12px 16px;margin:18px 0;font-size:15px;max-width:44em}
+.warn{border-left:4px solid #000;background:#fff;padding:12px 16px;margin:18px 0;font-size:15px;max-width:44em}
+table{border-collapse:collapse;width:100%;font-size:14.5px;margin:16px 0 24px;background:#fff}
+th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 13px Inter;background:#000;color:#fff}
+td b{font-weight:600}
+.tw{overflow-x:auto}
+.idx{font:800 28px Poppins;letter-spacing:-.04em}
+.bars{margin:20px 0 28px;max-width:640px}
+.bars div{display:grid;grid-template-columns:230px 1fr 50px;gap:12px;align-items:center;margin-bottom:8px;font-size:14px}
+.bars i{display:block;height:16px;background:var(--green);border-radius:99px}
+.bars span:last-child{font-weight:600;text-align:right}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 22px}
+.ba div{padding:16px;border-radius:14px;font-size:15px}
+.ba .b{background:#f1f1f1}.ba .a{background:#000;color:#fff}
+.ba small{display:block;font:600 12px Inter;margin-bottom:6px;opacity:.7}
+footer{padding:40px 0 80px;font-size:14px;color:var(--muted)}
+#proto{position:fixed;left:14px;bottom:14px;z-index:99;display:flex;gap:2px;background:rgba(0,0,0,.85);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:3px;font:600 12px/1 Inter}
+#proto a,#proto span{padding:7px 12px;border-radius:999px;color:#bbb;text-decoration:none}
+#proto span{background:var(--green);color:#000}
+@media (max-width:640px){.bars div{grid-template-columns:1fr 50px}.bars i{grid-column:1/-1;order:3}.ba{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="banner">Internal working document for the Cargo Velo prototype. Not for publication.</div>
+<div id="proto"><a href="../../v1/nl/">v1</a><a href="../">v2</a><span>plan</span></div>
+
+<header class="top"><div class="wrap">
+  <h1>From delivering to taking the worry away.</h1>
+  <p>Positioning, a plan to double revenue in 18 months, and the search queries Cargo Velo should be found for. Built from the current site, desk research and Jo's feedback.</p>
+  <nav><a href="#position">Positioning</a><a href="#cities">Three cities</a><a href="#growth">Doubling revenue</a><a href="#queries">Query coverage</a><a href="#open">To verify</a></nav>
+</div></header>
+
+<section id="position"><div class="wrap">
+  <h2>1. Positioning: ontzorgen, not bezorgen</h2>
+  <p>Cargo Velo does not sell a delivery. It sells the end of a worry: the sample arrives cold and on time, the webshop customer is happy, the urgent part is on site, the CO2 report is done. "Ontzorgen" is the word customers already use: a Google review from Au Pain Marie says <i>"Zodat wij ontzorgd zijn en de klant toch alles goed krijgt."</i> Mokabon calls Cargo Velo "het verlengstuk van ons merk".</p>
+  <div class="note"><b>Positioning statement (draft).</b> Cargo Velo is the emission-free logistics partner that takes the worry out of moving what matters in Gent, Antwerpen and Brussel: from webshop parcels and urgent parts to medical samples and DNA. One contact, proof of every delivery, zero emissions.</div>
+  <h3>Message pillars</h3>
+  <ul>
+    <li><b>Eén aanspreekpunt.</b> A fixed contact who starts up and follows every shipment (already promised on the Care page).</li>
+    <li><b>Op tijd, en bewezen.</b> 99% first attempt, NPS 94, track and trace, proof of delivery.</li>
+    <li><b>Zonder uitstoot.</b> 100% emission-free, with CO2 data for the customer's reporting.</li>
+  </ul>
+  <h3>Wording shifts</h3>
+  <div class="ba"><div class="b"><small>Today</small>"Onze fietskoeriers bezorgen al jouw pakketten."</div><div class="a"><small>Proposed</small>"Wij ontzorgen, jij groeit."</div></div>
+  <div class="ba"><div class="b"><small>Today</small>"Spoedkoerier: 30 minuten na pick-up."</div><div class="a"><small>Proposed</small>"Spoed? Wij ontzorgen binnen 30 minuten."</div></div>
+  <p>Position the company as an <b>enabler</b> of amazing organisations (hospitals, labs, retailers, caterers, logistics partners), and tell stories through them. The cinematic hero video (couriers through Brussels at golden hour) supports this: human, calm, craft, city.</p>
+  <h3>Beyond the homepage</h3>
+  <ul>
+    <li>Give <b>express</b>, <b>medical samples</b> and <b>DNA/biotech</b> their own pages, as Jo asked. They are today's most defensible and highest-value work and are buried on the Care page.</li>
+    <li>Keep documents and internal mail as one small tile. It is a real use case (COCOF), but it should not define the company.</li>
+  </ul>
+</div></section>
+
+<section id="cities" class="alt"><div class="wrap">
+  <h2>2. Three cities, without feeling limiting</h2>
+  <p>The site mentions the cities but never explains the model. The model is a strength: three dense city networks, connected by a shuttle, delivering in the cities and the surroundings. v2 shows this as "Drie steden. Eén netwerk."</p>
+  <div class="tw"><table>
+    <tr><th>Say</th><th>Avoid</th></tr>
+    <tr><td>"In Gent, Antwerpen en Brussel, en daartussen."</td><td>"Alleen in drie steden."</td></tr>
+    <tr><td>"Tot in de rand eromheen."</td><td>Implying a hard boundary at the ring road.</td></tr>
+    <tr><td>"Een zending van Gent naar Brussel? De shuttle neemt ze mee."</td><td>Listing the cities without the connection.</td></tr>
+    <tr><td>"Net buiten onze steden? Vraag het ons."</td><td>Promising delivery anywhere in Belgium (not core).</td></tr>
+  </table></div>
+  <p>Add a city page per hub (see query coverage) so each city has its own local proof: Gent (AZ Sint-Lucas, Nespresso, the biotech cluster), Antwerpen (De Fietskoerier, Cadix), Brussel (AZORG rounds, COCOF, BRAL, Proximus).</p>
+</div></section>
+
+<section id="growth"><div class="wrap">
+  <h2>3. Doubling revenue in 18 months</h2>
+  <div class="warn"><b>Read this first.</b> I do not have Cargo Velo's revenue by line of business. The press quotes an expected turnover of "more than 1 million euro" for about 50 couriers, which is probably a journalist's error, so I have not used it. The index below shows where growth could come from if today's revenue is 100. Every contribution is a hypothesis to calibrate with real numbers.</div>
+  <div class="bars" role="img" aria-label="Illustrative contribution of each lever to growing from index 100 to 200">
+    <div><span>Recurring medical and lab rounds</span><i style="width:100%"></i><span>+25</span></div>
+    <div><span>Enterprise and tender subcontracting</span><i style="width:80%"></i><span>+20</span></div>
+    <div><span>Pricing, contracts, merger cross-sell</span><i style="width:60%"></i><span>+15</span></div>
+    <div><span>B2B recurring rounds, food and retail</span><i style="width:60%"></i><span>+15</span></div>
+    <div><span>Express (spoed)</span><i style="width:40%"></i><span>+10</span></div>
+    <div><span>DNA and biotech runs</span><i style="width:40%"></i><span>+10</span></div>
+    <div><span>City-to-city shuttle product</span><i style="width:20%"></i><span>+5</span></div>
+  </div>
+  <div class="tw"><table>
+    <tr><th>Lever</th><th>Why it can work</th><th>First moves</th></tr>
+    <tr><td><b>Recurring medical and lab rounds</b></td><td>Fixed daily routes make revenue per courier predictable. Proof already exists: AZ Sint-Lucas since 2015, AZORG twice a day with a shuttle to Aalst. Hospital and lab consolidation adds inter-site transport, and ZAS Antwerp already moves medicines, documents and samples by electric cargo bike.</td><td>Medical page and compliance pack (UN3373, ADR, temperature zones). Verify FAMHP, FAVV and GDP requirements with an ADR adviser before bidding. Target hospital networks, labs and large practices in the three cities.</td></tr>
+    <tr><td><b>Enterprise and tender subcontracting</b></td><td>Belgian bike parcels exceeded 5 million in 2024, up 70% (Belgian Cycle Logistics Federation). Carriers need zero-emission last mile. DHL, Easypost and Euro-Sprinters already use Cargo Velo.</td><td>Partner page with marketing kit and integration (already promised to logistics partners). Pursue carriers, 3PLs and tenders.</td></tr>
+    <tr><td><b>Pricing, contracts and merger cross-sell</b></td><td>Express and many parcel prices are quote-based, so there is no price anchor. Cargo Velo and De Fietskoerier (merged May 2026, about 50 couriers) each have clients the other does not.</td><td>Contract tiers, minimums and urgency surcharges. Offer Antwerp clients the Gent and Brussels network and the reverse.</td></tr>
+    <tr><td><b>B2B recurring rounds, food and retail</b></td><td>Fruit at Work, Okay, Soepplus, Proximus and Blommm show repeatable routes.</td><td>Productise "vaste ronde": a standard weekly or daily route with a fixed price.</td></tr>
+    <tr><td><b>Express (spoed)</b></td><td>The current site promises 30 minutes after pick-up on two pages. v2 deliberately makes no time promise: the point is the human dispatch team that works with the client to find the fastest solution. Competitors sell by quote.</td><td>A dedicated "Haast?" page, a phone number and a booking path built for urgency.</td></tr>
+    <tr><td><b>DNA and biotech runs</b></td><td>Sequencing providers such as Eurofins Genomics use courier collection from local drop boxes, and Plasmidsaurus recommends drop boxes. Cargo Velo already bundles Plasmidsaurus samples in its hub. The Ghent biotech cluster in Zwijnaarde is growing (a new VIB incubator opened there).</td><td>Biotech page in Dutch and English. Outreach to labs and start-ups around Zwijnaarde, and to other sequencing providers.</td></tr>
+    <tr><td><b>City-to-city shuttle</b></td><td>The shuttle connects the cities but is not sold as a service.</td><td>A simple "Gent to Brussel" rate card for same-day and next-day inter-city shipments.</td></tr>
+  </table></div>
+  <h3>Sequence</h3>
+  <ul>
+    <li><b>Months 0 to 6, package and prove.</b> Express, medical and biotech pages; city pages and Google Business Profiles; compliance pack; price tiers; outreach to hospitals, labs and carriers; confirm the revenue baseline by line.</li>
+    <li><b>Months 6 to 12, scale.</b> Convert first wins to recurring contracts; English pages; publish case studies; add inter-city shuttle rates; train couriers for medical rounds.</li>
+    <li><b>Months 12 to 18, extend.</b> Add routes and couriers where contracts demand them; consider Flemish city pilots through zero-emission-zone programmes, last because it needs the most capital.</li>
+  </ul>
+  <h3>Tailwinds</h3>
+  <ul>
+    <li>Ghent's low-emission zone regulation was updated in December 2025 (fine 185 euro). Brussels banned Euro 5 diesel in January 2026. Flanders is working on zero-emission zones for city logistics.</li>
+    <li>CSRD scope was narrowed by the Omnibus, so fewer shippers are legally forced to request CO2 data. It is still a sales tool for large customers' Scope 3 reporting, but not a growth engine on its own.</li>
+  </ul>
+  <h3>Track</h3>
+  <ul><li>Revenue per courier-day, share of recurring revenue, revenue by line, first-attempt rate, NPS, number of active hospital, lab and carrier contracts, qualified inbound requests by page.</li></ul>
+</div></section>
+
+<section id="queries" class="alt"><div class="wrap">
+  <h2>4. Which queries to cover</h2>
+  <p>You asked ChatGPT for a delivery in Ghent and Cargo Velo came up. That fits what the desk research found: Cargo Velo shows up through the city of Ghent's last-mile provider list and press coverage, rather than through cargovelo.be itself. To be recommended for the rest of the business, each business line needs its own page and its own proof.</p>
+  <div class="warn"><b>Limits.</b> This is a desk analysis. The search tool I used is US-only and returns summaries, not a real results page, and I could not test French or AI-assistant answers. Check real Belgian results with Google Search Console and by asking ChatGPT, Perplexity and Google's AI answers directly.</div>
+  <div class="tw"><table>
+    <tr><th>Segment</th><th>Example queries (NL, FR, EN)</th><th>Page to create</th></tr>
+    <tr><td><b>Webshop and retail delivery</b></td><td>fietskoerier Gent; thuislevering webshop Gent; ship from store; retours ophalen bij klant; livraison à vélo magasin Bruxelles; same day delivery Ghent</td><td>Webshop and ship-from-store, with returns</td></tr>
+    <tr><td><b>Same-day and urgent</b></td><td>spoedkoerier Gent / Antwerpen / Brussel; koerier vandaag nog; dringende levering 30 minuten; coursier urgent Bruxelles; zware pakketten 150 kg per fiets</td><td>Express (spoed) page</td></tr>
+    <tr><td><b>Medical and lab</b></td><td>koerier medische stalen Gent; labotransport huisarts; transport bloedstalen ziekenhuis; GDP-transport gekoeld; coursier échantillons médicaux Bruxelles; medical courier Ghent</td><td>Medical samples page, Ghent proof first</td></tr>
+    <tr><td><b>DNA and biotech</b></td><td>DNA stalen versturen koerier; sequencing stalen ophalen Gent; DNA sample courier Belgium; Plasmidsaurus drop-off Ghent</td><td>Biotech page in Dutch and English</td></tr>
+    <tr><td><b>Food, catering, flowers</b></td><td>maaltijden leveren bedrijven fiets; cateringlevering koerier Antwerpen; bloemen leveren bedrijven Gent fiets; livraison fleurs à vélo Bruxelles</td><td>Food, catering and flowers page (split from health)</td></tr>
+    <tr><td><b>B2B recurring rounds</b></td><td>vaste ronde koerier bedrijf; winkelbevoorrading filialen stad; afvalophaling bedrijven fiets; fruit leveren kantoor</td><td>Vaste rondes and replenishment page</td></tr>
+    <tr><td><b>Logistics partners</b></td><td>last mile fietskoerier Antwerpen; first en last mile partner Gent; onderaanneming stadsdistributie; last mile cargo bike partner Belgium</td><td>Partner page naming logistics clients</td></tr>
+    <tr><td><b>Sustainability</b></td><td>duurzame stadslogistiek Gent webshop; CO2-vrije levering; lage-emissiezone Gent levering; zero-emission delivery Brussels</td><td>Sustainability page with sample CO2 report</td></tr>
+    <tr><td><b>City to city</b></td><td>koerier Gent Antwerpen vandaag; Gent Brussel pakket fiets; courier Ghent to Brussels same day</td><td>Inter-city shuttle page</td></tr>
+    <tr><td><b>Brand and jobs</b></td><td>Cargo Velo reviews; fietskoerier vacature Gent; werken bij Cargo Velo</td><td>Keep small</td></tr>
+  </table></div>
+  <h3>What the search check showed</h3>
+  <ul>
+    <li>cargovelo.be itself did not surface for the tested queries. Cargo Velo appeared through the Ghent last-mile provider list and press about the merger.</li>
+    <li>No dedicated medical bike courier appeared for Ghent or Brussels, and nothing Belgian appeared for DNA sample courier, so those are open fields.</li>
+    <li>For urgent same-day queries, brokers such as Dagoexpress and Eurosender, and bike couriers in Brussels, dominated.</li>
+  </ul>
+  <h3>Gaps on the current site</h3>
+  <ul>
+    <li>Only Dutch and French. There is no English page, which matters for biotech and international clients.</li>
+    <li>No city pages, no standalone express page, and "health and food" bundles lab samples with flowers, catering and mail. The page never says "DNA".</li>
+    <li>No visible FAQ and no FAQ markup. The structured data lists only the Ghent address and has no <code>areaServed</code>, so Antwerp and Brussels are invisible to search engines and AI assistants.</li>
+  </ul>
+  <h3>Top ten, in order</h3>
+  <ul>
+    <li>1. Express page. 2. Three city pages with hub, shuttle and FAQ. 3. <code>areaServed</code> plus a place entity per hub. 4. Medical page separate from food. 5. Biotech page in Dutch and English. 6. Webshop and returns page. 7. Visible FAQ and FAQ markup on every page. 8. Google Business Profiles for Antwerp and Brussels. 9. Partner page, plus listings with the Belgian Cycle Logistics Federation and Cairgobike. 10. A Wikidata entry and a press page linking the merger and the Revolve cover story.</li>
+  </ul>
+  <p><b>v2 now follows this structure.</b> It is 16 separate pages instead of one long scroll: a short home page, one page per service (Haast, medical samples, DNA and biotech, sensitive deliveries, vaste rondes, logistics partners, webshops and retail), a page for the three-city network plus one each for Gent, Antwerpen and Brussel, customers, sustainability, about and the request form. Each page has its own title, description, breadcrumb, an FAQ built from these queries and the matching Service, FAQPage and LocalBusiness markup with <code>areaServed</code>. The pages are set to noindex while this is a prototype. When it goes live, remove noindex and add canonical URLs, a sitemap and hreflang for the Dutch, French and English versions.</p>
+  <h3>Knowing who clicks what</h3>
+  <p>Separate pages also show the path to "Plan je levering". Every call-to-action carries its source, and the request email includes the page the visitor clicked from and the pages they viewed in that session (kept in the browser until they send a request, and mentioned in the form's fine print). Connect a privacy-friendly analytics tool later to read the same click events.</p>
+  <h3>Off-site sources that AI assistants and Google tend to cite</h3>
+  <p>The city of Ghent's last-mile provider list (already working), the Cycle Logistics Federation, Google Business Profiles, directories, Wikidata, and press such as the merger coverage and the Revolve cover story. Ask Antwerp and Brussels for equivalent provider listings.</p>
+</div></section>
+
+<section id="open"><div class="wrap">
+  <h2>5. To verify before this goes public</h2>
+  <ul>
+    <li><b>Eurofins and "Printship".</b> Both come from Jo. I could not find a German company called Printship, nor any public link between Cargo Velo and Eurofins. v2 names them as given; confirm the names and the arrangement, or remove them. Plasmidsaurus is on the current site.</li>
+    <li><b>Revenue baseline by line</b>, to calibrate the index in section 3.</li>
+    <li><b>Medical compliance:</b> FAMHP, FAVV and GDP requirements for sample transport, and ADR and UN3373 handling. The site cites FAGG, FAVV, ADR and GDP; confirm the current status of certifications before claiming them in new copy.</li>
+    <li><b>Hubs:</b> locations and hours of the Antwerp and Brussels hubs, and the shuttle schedule, before promising same-day city-to-city service.</li>
+    <li><b>Reviews:</b> v2 uses the review text from the site's own Google review cards. Confirm the team is happy to show the reviewers' names.</li>
+    <li><b>Email form:</b> the v2 form sends through FormSubmit to two addresses. The first real submission asks the primary address to confirm. See the README.</li>
+  </ul>
+</div></section>
+<footer><div class="wrap">Sources: cargovelo.be, New Mobility (May 2026), made-in.be, stad.gent, the Belgian Cycle Logistics Federation as quoted by New Mobility, Eurofins Genomics, Plasmidsaurus, AML, ZAS Antwerp via the EU Urban Mobility Observatory, Brussels Environment and Flanders policy pages. Full links are in the repository README.</div></footer>
+</body>
+</html>
